@@ -1,0 +1,22 @@
+
+
+.more-project-title{
+    color: var(--heading-text-color);
+    text-align: center;
+}
+
+.more-project-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90vw;
+    margin-inline: auto;
+    gap: 20px;
+    padding-block: 50px;
+}
+
+@media screen and (max-width: 800px) {
+    .more-project-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}

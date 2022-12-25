@@ -1,0 +1,120 @@
+.skills-container{
+    width: 80vw;
+    margin-inline: auto;
+}
+
+#skills{
+    padding-block: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.skills-title{
+    color: var(--heading-text-color);
+}
+
+.skill-box{
+    display: flex;
+    width: 100%;
+    padding-block: 50px;
+}
+
+.single-skill{
+    border: 2px solid var(--color-accent);
+    padding: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Roboto';
+    /* border-radius: 8px; */
+}
+
+.icon-text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.icon{
+    font-size: 50px;
+}
+
+.text{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.text::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 5px solid blue;
+    z-index: -1;
+    transition: 0.3s ease;
+}
+
+.text:hover::before{
+    /* border: 15px solid blue; */
+    transform: scale(4);
+}
+
+.desc-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: gray;
+}
+
+.desc{
+    text-align: start;
+    color: var(--text-color);
+    margin-inline: 20px;
+    border-left: 1px solid gray;
+    padding-inline: 20px;
+
+}
+
+.text-android{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.text-android::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 5px solid green;
+    z-index: -1;
+    transition: 0.3s ease;
+}
+
+.text-android:hover::before{
+    /* border: 15px solid green; */
+    transform: scale(4);
+}
+
+@media screen and (max-width: 800px) {
+
+    .skill-box{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .single-skill{
+        width: 100%;
+    }
+
+    .text:hover::before{
+        transform: scale(10);
+    }
+}

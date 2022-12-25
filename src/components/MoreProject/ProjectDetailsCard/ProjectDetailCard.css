@@ -1,0 +1,53 @@
+
+
+.project-card-container{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.055);
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 4px black;
+    padding: 1rem;
+    transition: 0.5s ease;
+    border-radius: 8px;
+}
+
+.git-link{
+    text-decoration: none;
+}
+
+.git-link:hover{
+    color: var(--color-accent);
+}
+
+.project-card-container:hover h3{
+    color: var(--color-accent);
+}
+.project-card-container:hover{
+    transform: translateY(-10px);
+}
+.project-header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: var(--color-accent);
+
+}
+.project-body{
+    text-align: start;
+
+}
+.project-footer{
+    color: gray;
+    font-size: 0.8rem;
+    display: flex;
+    gap: 20px;
+}
+
+.project-body h3{
+}
+
+
+.project-body p{
+    color: lightgray;
+}
